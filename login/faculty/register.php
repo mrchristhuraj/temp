@@ -1,0 +1,248 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['uname']) || $_SESSION['role'] != 'F') {
+        echo "ERROR IN SESSION";
+        exit;
+    }
+
+
+    include_once(__DIR__."/../../includes/general.config.php");
+    include_once(__DIR__."/../../includes/sql.config.php");
+
+     $sql = "SELECT * FROM `flags`";
+      $db = mysqli_query($link,$sql);
+      if(!$db)
+            die("Failed to Insert: ".mysqli_error($link));
+      $row = null;
+      if(mysqli_num_rows($db) > 0 ){
+        while ($row = mysqli_fetch_assoc($db)) {
+            if($row['NAME'] == 'STUDENT_REGISTER') {
+              if($row['VALUE'] == 0) {
+                  readfile("./registartion-closed.html");
+                  exit;
+              }
+            }
+          }
+     }
+
+// id 0 then, cannot register
+// if 1 the, can register
+
+?>
+
+<html>
+<head>
+<title>eVerify Student Registration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../css/materialize.min.css" type="text/css" /> 
+<script src="../../js/jquery-3.1.0.min.js" type="text/javascript"></script>
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="register.js" type="text/javascript"></script>
+</head>
+<style>
+    .srm-text {
+            margin-left: 30px;
+        }
+        
+        nav div a img.logo-img {
+            height: 100%;
+            padding: 4px;
+            margin-left: 40px;
+        }
+        .login {
+            padding: 20px;
+            font-size: 1.3em;
+        }
+         .text {
+            font-size: 1.2em;
+        }
+        
+        .title {
+            font-size: 1.8em;            
+        }
+        .caps {
+            text-transform: uppercase;
+        }
+        .small-container {
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+</style>
+<body>
+    <nav>
+            <div class="nav-wrapper red">
+                <a href="<?php echo $HREF_URL  ?>"><img id="image" class="brand-logo logo-img s2" src="../../logo.png"> </img></a>
+                </a>
+                <a href="#" class="brand-logo  center hide-on-med-and-down"><?php echo $NAVBAR_TEXT; ?></a>
+                <ul id="nav-mobile" class="right">
+                    <li><a href="../../index.php">Logout</a></li>
+                    <li><a href="home.php">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                <div class="login red caps white-text">Student Registration</div>  
+                <div class="card-content text">
+                    <div class="row">
+                        <div class="col s12 m6 l6">
+                            <div class="row">
+                            <div class="col s12 input-field">
+                                <i class="material-icons prefix">assignment_ind</i>
+                                <input id="username" type="text" name="username" class="validate">
+                                <label for="username">Registration Number</label>
+                            </div>
+                            </div>
+                        </div>
+
+                         <div class="col s12 m6 l6">
+                                    <div class="row input-field">
+                                        <div clas="col s12 input-field">
+                                            <select id="departmentList">
+                                                <option value="1"> Computer Science and Eng. </option>
+                                                <option value="2"> Information Technology </option>
+                                                <option value="3"> Software Engineering </option>
+                                                <option value="4"> Civil Engineering </option>
+                                                <option value="5"> Mechanical engineering </option>
+                                                <option value="6"> Automobile Engineering </option>
+                                                <option value="7"> Aerospace Engineering </option>
+                                                <option value="8"> Mechatronics </option>
+                                                <option value="9">  Electronics and Comm. </option>
+                                                <option value="10"> Telecommunication </option>
+                                                <option value="11"> Electrical & Electronics </option>
+                                                <option value="12"> Electronics and Instru. </option>
+                                                <option value="13"> Instru. & Ctrl Eng </option>
+                                                <option value="14"> Chemical Engineering </option>
+                                                <option value="15"> Biotechnology </option>
+                                                <option value="16"> Biomedical Engineering </option>
+                                                <option value="17"> Genetic Engineering </option>
+                                                <option value="18"> Food Process Engineering </option>
+                                                <option value="19"> Nanotechnology </option>
+                                                <option value="20"> Nuclear Engineering </option>
+                                            </select>
+                                            <label>Department</label>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                     <div class="row">
+                        <div class="col s12 m6 l6">
+                            <div class="row">
+                            <div class="col s12 input-field">
+                                <i class="material-icons prefix">perm_identity</i>
+                                <input id="firstName" type="text" name="username" class="validate">
+                                <label for="firstName">First Name</label>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l6">
+                            <div class="row">
+                            <div class="col s12 input-field">
+                                <i class="material-icons prefix">perm_identity</i>
+                                <input id="lastName" type="text" name="username" class="validate">
+                                <label for="lastName">Course Name</label>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col s12 m6 l6">
+                            <div class="row">
+                            <div class="col s12 input-field">
+                                <i class="material-icons prefix">vpn_key</i>
+                                <input id="password" type="text" name="studentPassword" class="validate">
+                                <label for="password">Student Password</label>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s6 left-align">
+                            <a class="btn pink modal-trigger" href="#modalBulk" id="registerModalOpen">Bulk Registration</a>
+                        </div>
+
+
+                        <div class="col s6 right-align">
+                            <a class="btn pink" id="registerStudentButton">Register A Student</a>
+                        </div>
+
+                          <div class="row center red-text clear-fix text-darken-2 flow-text">
+                                <p id ="errorMsg"></p>
+                            </div>
+
+                            
+                    </div>
+
+                   
+                     <div class="row">
+                <div class="card">
+                <div class="login red caps white-text">Student List</div>  
+                <div class="card-content text">
+                    <div class="row">
+                        <div class="col s12">
+<div id="studentContentDiv"></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+                </div>
+
+
+
+            </div>
+
+
+
+          
+
+
+            </div>
+        </div>
+
+    <div id="modalBulk" class="modal">
+        <div class="modal-content">
+            <h4>Bulk Student Registration</h4><hr>
+            <div class="inputSelectionDiv">
+                <div class="row">
+                    <div class="col s12">
+                        <form action="#">
+                            <div class="file-field input-field">
+                                <div class="btn red">
+                                    <span>File</span>
+                                    <input id="inputField" type="file">
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12 right-align">
+                        <a class="btn pink right" id="registerStdBulkBtn">Register Students</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="bulkRegisterCodeDiv"></div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a class="waves-effect waves-green btn-flat" href="./template-bulk-data-input.csv" target="_blank">Download Registration Template</a>
+        </div>
+    </div>
+
+    <!-- BASIC SETUP (DO NOT CHANGE) -->
+        <script type="text/javascript" src="../../js/materialize.min.js"></script>
+        <!-- DONT CHANGE ABOVE IT -->
+</body>
+
+  </html>  

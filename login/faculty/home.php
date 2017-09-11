@@ -1,0 +1,178 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['uname']) || $_SESSION['role'] != 'F') {
+        echo "ERROR IN SESSION";
+        exit;
+    }
+
+        $username =  $_SESSION['uname'];
+        $name = $_SESSION['name'];
+        
+        $TABLE_NAME = "course_req_table";
+        
+    include_once(__DIR__."/../../includes/sql.config.php");
+    include_once(__DIR__."/../../includes/general.config.php");
+        $sql = "SELECT COURSE_NAME FROM `course_reg_table` WHERE STUD_ID = '$username' AND STATUS = 1;";
+
+        $db = mysqli_query($link,$sql);
+
+        if(!$db)
+              die("Failed to Load: ".mysqli_error($link));
+
+              	$sql_request = "SELECT COUNT(*) AS NOS FROM `course_reg_table` WHERE `STAFF_ID` = '$username' AND `STATUS` = 0";
+        $db_request = mysqli_query($link,$sql_request);
+
+        if(!$db_request)
+              die("Failed to Load: ".mysqli_error($link));
+	$row_request = mysqli_fetch_assoc($db_request);
+
+	$number_of_request_pending = $row_request['NOS'];
+?>
+
+    <html>
+
+    <head>
+        <title>eVerify Faculty Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../../js/jquery-3.1.0.min.js" type="text/javascript"></script>
+        <script src="home.js" type="text/javascript"></script>
+        <link type="text/css" rel="stylesheet" href="../../css/materialize.min.css" media="screen,projection" />
+    </head>
+    <style>
+        .srm-text {
+            margin-left: 30px;
+        }
+
+        nav div a img.logo-img {
+            height: 100%;
+            padding: 4px;
+            margin-left: 40px;
+        }
+
+        .card-heading-main {
+            padding: 20px;
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+
+        .text {
+            font-size: 1.2em;
+        }
+
+        .title {
+            font-size: 1.8em;
+            text-transform: uppercase;
+
+        }
+        .caps {
+            text-transform: uppercase;
+        }
+        @media only screen and (max-width : 992px) {
+            nav div a img.logo-img {
+                margin-left: 0;
+            }
+        }
+        .card-panel:hover {
+            margin: 0;
+            background-color: #FFF;
+            cursor: pointer;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+        .dropdown-regid {
+            width: 100%;
+        }
+        .resultDiv {
+            padding: 15px;
+            font-size: 3em;
+        }
+    </style>
+
+    <body>
+    <ul id="dropdown1" class="dropdown-content right">
+                    <li><a href="request.php">Requested Student</a></li>
+                    <li><a href="profile/index.php">Profile</a></li>  
+            <li class="divider"></li>
+            <li><a href="modify.php">Change Student Password</a></li>
+            <li><a href="delete.php">Remove Students</a></li>
+            <li class="divider"></li>
+            <li><a href="register.php">Bulk Student Registration</a></li>
+        </ul>
+
+        <nav>
+            <div class="nav-wrapper red">
+                <a href="<?php echo $HREF_URL  ?>"><img id="image" class="brand-logo logo-img s2" src="../../logo.png"> </img></a>
+                </a>
+                <a href="#" class="brand-logo  center hide-on-med-and-down"><?php echo $NAVBAR_TEXT; ?></a>
+                <ul id="nav-mobile" class="right"> 
+                    <li><a class="dropdown-button 
+<?php
+	if($number_of_request_pending > 0)
+		echo "tooltipped";
+?>
+                    " data-position="bottom" data-delay="50" data-tooltip="<?php echo $number_of_request_pending ?> Pending Request" href="#!" data-activates="dropdown1">More Options</a></li>  
+                    <li><a href="../../index.php">Logout</a></li>               
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="card">
+                <p id="top-bar" class="card-heading-main red white-text title">Faculty Home</p>
+                <div class="card-content">
+                    <p class="text">Employee ID:
+                        <?php echo $_SESSION['uname'];?>
+                    </p>
+                    <p class="text">Name:
+                        <?php echo $_SESSION['name'] ?> </p>
+                    <br>
+
+                   
+    
+                    <div class="row">
+                     <p class="title text-darken-2">VIEW DETAILS<p>
+                        <div class="col s12 m4 l4 center">
+                           <select id="courselistiddata">
+                                <option value="" disabled selected>Choose Course</option>
+                                <?php
+                                $sql_regid = "SELECT DISTINCT COURSE_ID,COURSE_NAME FROM `FACULTY_$username`";
+                                $db_regid = mysqli_query($link,$sql_regid);
+                                if(!$db_regid)
+                                    die("Failed to Insert: ".mysqli_error($link));
+                                if(mysqli_num_rows($db_regid) > 0) {
+                                    if(mysqli_query($link,$sql_regid)) {
+                                        while($row = mysqli_fetch_assoc($db_regid)){
+                                            $temp1 = $row['COURSE_ID'];
+                                            $temp2 = $row['COURSE_NAME'];
+                                            echo "<option value=\"".$row['COURSE_NAME']."\">".$temp2."</option>";
+                                        }
+                                    }
+                                }
+                                ?>
+                            </select>
+                        </div>
+
+                            <div class="s12 m4 l4">
+                                <a class='btn text pink' id="view-data-btn">View Details</a>
+                            </div>
+                    </div>
+                    <div id="tableDiv"></div>
+                    <br>
+                    <div class="row">
+                        <div class="s12 right-align">
+                             <a class='btn text pink' id="export-result-btn">Print Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- BASIC SETUP (DO NOT CHANGE) -->
+        <script type="text/javascript" src="../../js/materialize.min.js"></script>
+        <!-- DONT CHANGE ABOVE IT -->
+    </body>
+
+    </html>

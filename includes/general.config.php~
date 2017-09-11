@@ -1,0 +1,6 @@
+<?php
+
+$NAVBAR_TEXT = "SRM University eLab Examinations";
+$HREF_URL = "http://www.srmuniv.ac.in/";
+
+?>
