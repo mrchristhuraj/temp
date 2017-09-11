@@ -84,10 +84,10 @@
         <div class="container">
             <div class="row">
                 <div class="card">
-                <div class="login red caps white-text">Student Registration</div>  
-                <div class="card-content text">
+                    <div class="login red caps white-text">Student Registration</div>
+                    <div class="card-content text">
                     <h5>SINGLE STUDENT REGISTRATION</h5><hr>
-                    <div class="row">
+                        <div class="row">
                         <div class="col s12 m6 l6">
                             <div class="row">
                             <div class="col s12 input-field">
@@ -98,37 +98,38 @@
                             </div>
                         </div>
 
-                         <div class="col s12 m6 l6">
-                                    <div class="row input-field">
-                                        <div clas="col s12 input-field">
-                                            <select id="departmentList">
-                                                <option value="1"> Computer Science and Eng. </option>
-                                                <option value="2"> Information Technology </option>
-                                                <option value="3"> Software Engineering </option>
-                                                <option value="4"> Civil Engineering </option>
-                                                <option value="5"> Mechanical engineering </option>
-                                                <option value="6"> Automobile Engineering </option>
-                                                <option value="7"> Aerospace Engineering </option>
-                                                <option value="8"> Mechatronics </option>
-                                                <option value="9">  Electronics and Comm. </option>
-                                                <option value="10"> Telecommunication </option>
-                                                <option value="11"> Electrical & Electronics </option>
-                                                <option value="12"> Electronics and Instru. </option>
-                                                <option value="13"> Instru. & Ctrl Eng </option>
-                                                <option value="14"> Chemical Engineering </option>
-                                                <option value="15"> Biotechnology </option>
-                                                <option value="16"> Biomedical Engineering </option>
-                                                <option value="17"> Genetic Engineering </option>
-                                                <option value="18"> Food Process Engineering </option>
-                                                <option value="19"> Nanotechnology </option>
-                                                <option value="20"> Nuclear Engineering </option>
-                                            </select>
-                                            <label>Department</label>
-                                        </div>
-                                    </div>
+                        <div class="col s12 m6 l6">
+                            <div class="row input-field">
+                                <div clas="col s12 input-field">
+                                    <select id="departmentList">
+                                        <option value="1"> Computer Science and Eng. </option>
+                                        <option value="2"> Information Technology </option>
+                                        <option value="3"> Software Engineering </option>
+                                        <option value="4"> Civil Engineering </option>
+                                        <option value="5"> Mechanical engineering </option>
+                                        <option value="6"> Automobile Engineering </option>
+                                        <option value="7"> Aerospace Engineering </option>
+                                        <option value="8"> Mechatronics </option>
+                                        <option value="9">  Electronics and Comm. </option>
+                                        <option value="10"> Telecommunication </option>
+                                        <option value="11"> Electrical & Electronics </option>
+                                        <option value="12"> Electronics and Instru. </option>
+                                        <option value="13"> Instru. & Ctrl Eng </option>
+                                        <option value="14"> Chemical Engineering </option>
+                                        <option value="15"> Biotechnology </option>
+                                        <option value="16"> Biomedical Engineering </option>
+                                        <option value="17"> Genetic Engineering </option>
+                                        <option value="18"> Food Process Engineering </option>
+                                        <option value="19"> Nanotechnology </option>
+                                        <option value="20"> Nuclear Engineering </option>
+                                    </select>
+                                    <label>Department</label>
                                 </div>
+                            </div>
+                        </div>
                     </div>
-                     <div class="row">
+
+                        <div class="row">
                         <div class="col s12 m6 l6">
                             <div class="row">
                             <div class="col s12 input-field">
@@ -150,59 +151,50 @@
                     </div>
 
 
-                    <div class="row">
-
-
+                        <div class="row">
                         <div class="col s12 right-align">
                             <a class="btn pink" id="registerStudentButton">Register A Student</a>
                         </div>
-
-                          <div class="row center red-text clear-fix text-darken-2 flow-text">
+                        <div class="row center red-text clear-fix text-darken-2 flow-text">
                                 <p id ="errorMsg"></p>
-                            </div>
-
-                            
-                    </div>
-
-                    <div class="row">
-                        <div class="card">
-                            <div class="login red caps white-text">Bulk Student Registartion</div>
-                            <div class="card-content text">
-                                <div class="row">
-                                    <div class="col s12 right-align">
-                                        <a class="btn pink modal-trigger" href="#modalBulk" id="registerModalOpen">Bulk Registration</a>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
+                    </div>
+                </div>
 
 
-                   
-                     <div class="row">
+
+
+
+            </div>
+
+            <div class="row">
                 <div class="card">
-                <div class="login red caps white-text">Student List</div>
-                <div class="card-content text">
-                    <div class="row">
-                        <div class="col s12">
-<div id="studentContentDiv"></div>
+                    <div class="login red caps white-text">Bulk Student Registartion</div>
+                    <div class="card-content text">
+                        <div class="row">
+                            <div class="col s12 right-align">
+                                <a class="btn pink modal-trigger" href="#modalBulk" id="registerModalOpen">Bulk Registration</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="row">
+                <div class="card">
+                    <div class="login red caps white-text">Student List</div>
+                    <div class="card-content text">
+                        <div class="row">
+                            <div class="col s12">
+                                <div id="studentContentDiv"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-                </div>
 
 
-
-            </div>
-
-
-
-          
-
-
-            </div>
         </div>
 
     <div id="modalBulk" class="modal">
