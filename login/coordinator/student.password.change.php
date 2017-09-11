@@ -32,6 +32,7 @@ if(mysqli_num_rows($db) > 0) {
         echo "$studentID \n";
         // Update password in USERS TABLE
         $sql2 = "UPDATE `$TABLE_NAME` SET `PASSWORD` = '$password' WHERE `USER_ID` = '$studentID'";
+        echo $sql2."\n";
         $db2 = mysqli_query($link,$sql2);
         if(!$db2)
             die("Failed to Update Student Password in USERS REQ".mysqli_error($link));
@@ -39,6 +40,7 @@ if(mysqli_num_rows($db) > 0) {
         // Update password in USERS REQ TABLE
         $password = md5($password);
         $sql2 = "UPDATE `$TABLE_NAME_USERS` SET `PASSWORD` = '$password' WHERE `USER_ID` = '$studentID'";
+        echo $sql2."\n";
         $db2 = mysqli_query($link,$sql2);
         if(!$db2)
             die("Failed to Update Student Password in USERS RECORD".mysqli_error($link));
