@@ -78,7 +78,7 @@ include_once(__DIR__."/../../includes/general.config.php");
                             <select id="facultySelectioID">
                                 <option value="" disabled selected>Choose Faculty</option>
                                 <?php
-                                $TABLE_NAME_CCOD = "cooridnator_".$course_id;
+                                $TABLE_NAME_CCOD = "coordinator_".$course_id;
                                 $sql_regid = "SELECT DISTINCT FACULTY_NAME,FACULTY_ID FROM $TABLE_NAME_CCOD";
                                 $db_regid = mysqli_query($link,$sql_regid);
                                 if(!$db_regid)
