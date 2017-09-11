@@ -30,6 +30,11 @@
         exit;
     }
 
+    $sql = "UPDATE `USERS_REQ_TABLE` SET `PASSWORD` = '$password' WHERE `USER_ID` = '$studentID'";
+    $db = mysqli_query($link,$sql);
+    if(!$db)
+        die("Failed to Load: ".mysqli_error($link));
+
     $password = md5($_REQUEST['password']);
 
     $sql = "UPDATE `USERS_TABLE` SET `PASSWORD` = '$password' WHERE `USER_ID` = '$studentID'";

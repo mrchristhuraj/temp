@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4718d5d7-0153-41b0-863d-48bfbf1103a7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/faculty/register.helper.elab.php" afterPath="$PROJECT_DIR$/login/faculty/register.helper.elab.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/faculty/modify.helper.php" afterPath="$PROJECT_DIR$/login/faculty/modify.helper.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,16 +61,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.helper.elab.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="register.helper.elab.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login/faculty/register.helper.elab.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
+            <state relative-caret-position="1003">
               <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding>
                 <marker date="1505130214658" expanded="true" signature="786:839" ph="SELECT * FRO... USERS_TABLE" />
                 <marker date="1505130214658" expanded="true" signature="2279:2851" ph="CREATE TABLE... IF" />
                 <marker date="1505130214658" expanded="true" signature="3036:3285" ph="INSERT INTO `users_table`... " />
                 <marker date="1505130214658" expanded="true" signature="3495:3775" ph="INSERT INTO `users_req_table`... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modify.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login/faculty/modify.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modify.helper.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/login/faculty/modify.helper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+              <folding>
+                <marker date="1505130941465" expanded="true" signature="322:379" ph="SELECT * FRO... ${$facultyID}" />
+                <marker date="1505130941465" expanded="true" signature="849:933" ph="UPDATE `USER... " />
+                <marker date="1505130941465" expanded="true" signature="1096:1176" ph="UPDATE `USER... " />
               </folding>
             </state>
           </provider>
@@ -133,6 +157,7 @@
         <option value="$PROJECT_DIR$/login/faculty/login.staff.deleteStudent.php" />
         <option value="$PROJECT_DIR$/login/faculty/register.php" />
         <option value="$PROJECT_DIR$/login/faculty/register.helper.elab.php" />
+        <option value="$PROJECT_DIR$/login/faculty/modify.helper.php" />
       </list>
     </option>
   </component>
@@ -303,12 +328,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1505127292050</updated>
-      <workItem from="1505127293297" duration="2923000" />
+      <workItem from="1505127293297" duration="3590000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2923000" />
+    <option name="totallyTimeSpent" value="3590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="850" extended-state="6" />
@@ -480,13 +505,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/login/faculty/register.helper.elab.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
+        <state relative-caret-position="1003">
           <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding>
             <marker date="1505130214658" expanded="true" signature="786:839" ph="SELECT * FRO... USERS_TABLE" />
             <marker date="1505130214658" expanded="true" signature="2279:2851" ph="CREATE TABLE... IF" />
             <marker date="1505130214658" expanded="true" signature="3036:3285" ph="INSERT INTO `users_table`... " />
             <marker date="1505130214658" expanded="true" signature="3495:3775" ph="INSERT INTO `users_req_table`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/faculty/modify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/faculty/modify.helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+          <folding>
+            <marker date="1505130941465" expanded="true" signature="322:379" ph="SELECT * FRO... ${$facultyID}" />
+            <marker date="1505130941465" expanded="true" signature="849:933" ph="UPDATE `USER... " />
+            <marker date="1505130941465" expanded="true" signature="1096:1176" ph="UPDATE `USER... " />
           </folding>
         </state>
       </provider>
