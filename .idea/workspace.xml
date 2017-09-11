@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4718d5d7-0153-41b0-863d-48bfbf1103a7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/coordinator/managepwd.js" afterPath="$PROJECT_DIR$/login/coordinator/managepwd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/coordinator/managepwd.php" afterPath="$PROJECT_DIR$/login/coordinator/managepwd.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/coordinator/student.password.change.php" afterPath="$PROJECT_DIR$/login/coordinator/student.password.change.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,62 +13,56 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="managepwd.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/login/coordinator/managepwd.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="275">
-                  <caret line="111" column="59" lean-forward="true" selection-start-line="111" selection-start-column="59" selection-end-line="111" selection-end-column="59" />
-                  <folding>
-                    <marker date="1505127601311" expanded="true" signature="2334:2379" ph="SELECT DISTI... ${$TABLE_NAME_CCOD}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="managepwd.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/login/coordinator/managepwd.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="addfaculty.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/login/coordinator/addfaculty.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-255">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding>
-                    <marker date="1504867388131" expanded="true" signature="2550:2628" ph="SELECT DISTI... USERS_TABLE" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="addfaculty.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/login/coordinator/addfaculty.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1408">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding>
-                    <marker date="1504867388131" expanded="true" signature="2550:2628" ph="SELECT DISTI... USERS_TABLE" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="managepwd.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login/coordinator/managepwd.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="111" column="59" lean-forward="true" selection-start-line="111" selection-start-column="59" selection-end-line="111" selection-end-column="59" />
+              <folding>
+                <marker date="1505127601311" expanded="true" signature="2334:2379" ph="SELECT DISTI... ${$TABLE_NAME_CCOD}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="managepwd.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login/coordinator/managepwd.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="student.password.change.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/login/coordinator/student.password.change.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+              <folding>
+                <marker date="1505127947742" expanded="true" signature="616:677" ph="SELECT * FRO... ${$TABLE_NAME}" />
+                <marker date="1505127947742" expanded="true" signature="976:1056" ph="UPDATE `${$T... " />
+                <marker date="1505127947742" expanded="true" signature="1306:1392" ph="UPDATE `${$T... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addfaculty.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login/coordinator/addfaculty.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-255">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1504867388131" expanded="true" signature="2550:2628" ph="SELECT DISTI... USERS_TABLE" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,6 +72,7 @@
       <list>
         <option value="$PROJECT_DIR$/login/coordinator/managepwd.php" />
         <option value="$PROJECT_DIR$/login/coordinator/managepwd.js" />
+        <option value="$PROJECT_DIR$/login/coordinator/student.password.change.php" />
       </list>
     </option>
   </component>
@@ -249,12 +243,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1505127292050</updated>
-      <workItem from="1505127293297" duration="336000" />
+      <workItem from="1505127293297" duration="655000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="336000" />
+    <option name="totallyTimeSpent" value="655000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="850" extended-state="6" />
@@ -290,6 +284,16 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/login/coordinator/managepwd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="111" column="59" lean-forward="true" selection-start-line="111" selection-start-column="59" selection-end-line="111" selection-end-column="59" />
+          <folding>
+            <marker date="1505127601311" expanded="true" signature="2334:2379" ph="SELECT DISTI... ${$TABLE_NAME_CCOD}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/login/coordinator/addfaculty.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255">
@@ -308,12 +312,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/coordinator/managepwd.php">
+    <entry file="file://$PROJECT_DIR$/login/coordinator/student.password.change.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="111" column="59" lean-forward="true" selection-start-line="111" selection-start-column="59" selection-end-line="111" selection-end-column="59" />
+        <state relative-caret-position="272">
+          <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
           <folding>
-            <marker date="1505127601311" expanded="true" signature="2334:2379" ph="SELECT DISTI... ${$TABLE_NAME_CCOD}" />
+            <marker date="1505127947742" expanded="true" signature="616:677" ph="SELECT * FRO... ${$TABLE_NAME}" />
+            <marker date="1505127947742" expanded="true" signature="976:1056" ph="UPDATE `${$T... " />
+            <marker date="1505127947742" expanded="true" signature="1306:1392" ph="UPDATE `${$T... " />
           </folding>
         </state>
       </provider>
