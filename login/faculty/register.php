@@ -84,9 +84,8 @@
         <div class="container">
             <div class="row">
                 <div class="card">
-                    <div class="login red caps white-text">Student Registration</div>
+                    <div class="login red caps white-text">Single Student Registration</div>
                     <div class="card-content text">
-                    <h5>SINGLE STUDENT REGISTRATION</h5><hr>
                         <div class="row">
                         <div class="col s12 m6 l6">
                             <div class="row">
@@ -128,7 +127,6 @@
                             </div>
                         </div>
                     </div>
-
                         <div class="row">
                         <div class="col s12 m6 l6">
                             <div class="row">
@@ -149,8 +147,6 @@
                             </div>
                         </div>
                     </div>
-
-
                         <div class="row">
                         <div class="col s12 right-align">
                             <a class="btn pink" id="registerStudentButton">Register A Student</a>
@@ -161,16 +157,11 @@
                     </div>
                     </div>
                 </div>
-
-
-
-
-
             </div>
 
             <div class="row">
                 <div class="card">
-                    <div class="login red caps white-text">Bulk Student Registartion</div>
+                    <div class="login red caps white-text">Bulk Student Registration</div>
                     <div class="card-content text">
                         <div class="row">
                             <div class="col s12 right-align">
