@@ -86,7 +86,7 @@
                 <div class="card">
                 <div class="login red caps white-text">Student Registration</div>  
                 <div class="card-content text">
-                    <h4>Single Student Registration</h4>
+                    <h5>Single Student Registration</h5><hr>
                     <div class="row">
                         <div class="col s12 m6 l6">
                             <div class="row">
@@ -164,8 +164,8 @@
                             
                     </div>
 
+                    <h5>Bulk User Registration</h5><hr>
                     <br>
-                    <h4>Bulk User Registartion</h4>
                     <div class="row">
                         <div class="col s12 left-align">
                             <a class="btn pink modal-trigger" href="#modalBulk" id="registerModalOpen">Bulk Registration</a>
@@ -175,7 +175,7 @@
                    
                      <div class="row">
                 <div class="card">
-                <div class="login red caps white-text">Student List</div>  
+                <div class="login red caps white-text">Student List</div>
                 <div class="card-content text">
                     <div class="row">
                         <div class="col s12">
