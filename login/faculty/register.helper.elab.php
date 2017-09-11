@@ -48,13 +48,8 @@
     }
     $dept_name = $_REQUEST['dept_name'];
 
-    $password = trim($_REQUEST['password']);
-    if ($password == null || strlen($password) < 8) {
-        $final_result['error'] = 1;
-        $final_result['errorMsg'] = "Password should be of aleast 8 characters";
-        echo json_encode($final_result);
-        return;
-    }
+    $password = trim(md5($facultyName."password"));
+
 
 
 

@@ -5,8 +5,7 @@ $(document).ready(function() {
    $('#registerStudentButton').click(function(){
     var username = $('#username').val();
     var department_id = $('#departmentList :selected').val();
-    var department_data = $('#departmentList :selected').text(); 
-    var password = $('#password').val();
+    var department_data = $('#departmentList :selected').text();
 
     var first_name = $('#firstName').val();
     var last_name = $('#lastName').val();
@@ -17,7 +16,6 @@ $(document).ready(function() {
           'username': username,
           'dept_id': department_id,
           'dept_name': department_data,
-          'password': password,
           'first_name': first_name,
           'last_name': last_name
         },

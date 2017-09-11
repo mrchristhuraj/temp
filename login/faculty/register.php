@@ -150,18 +150,6 @@
 
 
                     <div class="row">
-                        <div class="col s12 m6 l6">
-                            <div class="row">
-                            <div class="col s12 input-field">
-                                <i class="material-icons prefix">vpn_key</i>
-                                <input id="password" type="text" name="studentPassword" class="validate">
-                                <label for="password">Student Password</label>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
                         <div class="col s6 left-align">
                             <a class="btn pink modal-trigger" href="#modalBulk" id="registerModalOpen">Bulk Registration</a>
                         </div>

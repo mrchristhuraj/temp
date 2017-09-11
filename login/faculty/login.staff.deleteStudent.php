@@ -60,7 +60,14 @@
     if(!$db) 
           die("Failed to Insert: $sql".mysqli_error($link));
 
-        
-      echo "1";
+$sql = "DELETE FROM `FREQUENCY_TABLE` WHERE `REG_ID`='$regNo'";
+
+$db = mysqli_query($link,$sql);
+
+if(!$db)
+    die("Failed to Insert: $sql".mysqli_error($link));
+
+
+echo "1";
       return;
 ?>
