@@ -130,6 +130,7 @@
             <li class="divider"></li>
             <li><a href="addsession.php" class="indigo-text text-darken-1">Add Session</a></li>
             <li><a href="modify.php" class="indigo-text text-darken-1">Change Student/ Faculty Password</a></li>
+            <li><a href="managepwd.php" class="indigo-text text-darken-1">Set Test Password</a></li>
         </ul>
 
         
