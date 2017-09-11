@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4718d5d7-0153-41b0-863d-48bfbf1103a7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/faculty/login.staff.deleteStudent.php" afterPath="$PROJECT_DIR$/login/faculty/login.staff.deleteStudent.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/faculty/register.helper.elab.php" afterPath="$PROJECT_DIR$/login/faculty/register.helper.elab.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/faculty/register.js" afterPath="$PROJECT_DIR$/login/faculty/register.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/faculty/register.php" afterPath="$PROJECT_DIR$/login/faculty/register.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,13 +26,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/login/faculty/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+            <state relative-caret-position="408">
+              <caret line="165" column="0" lean-forward="true" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
               <folding>
-                <marker date="1505128853424" expanded="true" signature="285:306" ph="SELECT * FRO... flags" />
+                <marker date="1505129089411" expanded="true" signature="285:306" ph="SELECT * FRO... flags" />
               </folding>
             </state>
           </provider>
@@ -76,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.staff.deleteStudent.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.staff.deleteStudent.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login/faculty/login.staff.deleteStudent.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -119,10 +116,10 @@
         <option value="$PROJECT_DIR$/login/coordinator/managepwd.php" />
         <option value="$PROJECT_DIR$/login/coordinator/managepwd.js" />
         <option value="$PROJECT_DIR$/login/coordinator/student.password.change.php" />
-        <option value="$PROJECT_DIR$/login/faculty/register.php" />
         <option value="$PROJECT_DIR$/login/faculty/register.js" />
         <option value="$PROJECT_DIR$/login/faculty/register.helper.elab.php" />
         <option value="$PROJECT_DIR$/login/faculty/login.staff.deleteStudent.php" />
+        <option value="$PROJECT_DIR$/login/faculty/register.php" />
       </list>
     </option>
   </component>
@@ -293,12 +290,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1505127292050</updated>
-      <workItem from="1505127293297" duration="1637000" />
+      <workItem from="1505127293297" duration="1799000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1637000" />
+    <option name="totallyTimeSpent" value="1799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="850" extended-state="6" />
@@ -393,16 +390,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/faculty/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
-          <folding>
-            <marker date="1505128853424" expanded="true" signature="285:306" ph="SELECT * FRO... flags" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login/faculty/register.student.helper.elab.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -466,6 +453,16 @@
             <marker date="1505128927326" expanded="true" signature="1019:1030" ph="DROP TABLE $... " />
             <marker date="1505128927326" expanded="true" signature="1173:1227" ph="DELETE FROM " />
             <marker date="1505128927326" expanded="true" signature="1352:1405" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/faculty/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="165" column="0" lean-forward="true" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+          <folding>
+            <marker date="1505129089411" expanded="true" signature="285:306" ph="SELECT * FRO... flags" />
           </folding>
         </state>
       </provider>
