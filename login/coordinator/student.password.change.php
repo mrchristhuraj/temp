@@ -20,6 +20,8 @@ if ($password == null || strlen($password) < 8 || strlen($password) > 30) {
 
 include_once(__DIR__."/../../includes/sql.config.php");
 
+$sql0 =
+
 $sql = "SELECT * FROM `$TABLE_NAME` WHERE `UNIQUE_ID` = '$faculty_id'";
 $db = mysqli_query($link,$sql);
 
@@ -29,18 +31,15 @@ if(!$db)
 if(mysqli_num_rows($db) > 0) {
     while($row = mysqli_fetch_assoc($db)) {
         $studentID = $row['USER_ID'];
-        echo "$studentID \n";
         // Update password in USERS TABLE
         $sql2 = "UPDATE `$TABLE_NAME` SET `PASSWORD` = '$password' WHERE `USER_ID` = '$studentID'";
-        echo $sql2."\n";
         $db2 = mysqli_query($link,$sql2);
         if(!$db2)
             die("Failed to Update Student Password in USERS REQ".mysqli_error($link));
 
         // Update password in USERS REQ TABLE
-        $password = md5($password);
-        $sql2 = "UPDATE `$TABLE_NAME_USERS` SET `PASSWORD` = '$password' WHERE `USER_ID` = '$studentID'";
-        echo $sql2."\n";
+        $password_md5 = md5($password);
+        $sql2 = "UPDATE `$TABLE_NAME_USERS` SET `PASSWORD` = '$password_md5' WHERE `USER_ID` = '$studentID'";
         $db2 = mysqli_query($link,$sql2);
         if(!$db2)
             die("Failed to Update Student Password in USERS RECORD".mysqli_error($link));
