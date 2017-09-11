@@ -53,7 +53,7 @@ include_once(__DIR__."/../../includes/general.config.php");
 </style>
 <body>
 <nav>
-    <div class="nav-wrapper indigo darken-1">
+    <div class="nav-wrapper red">
         <a href="<?php echo $HREF_URL  ?>"><img id="image" class="brand-logo logo-img s2" src="../../logo.png"> </img></a>
         </a>
         <a href="#" class="brand-logo  center hide-on-med-and-down"><?php echo $NAVBAR_TEXT; ?></a>
@@ -67,7 +67,7 @@ include_once(__DIR__."/../../includes/general.config.php");
 <div class="container">
     <div class="row">
         <div class="card">
-            <div class="login indigo darken-1 white-text">
+            <div class="login red white-text">
                 Set Test Password
             </div>
 

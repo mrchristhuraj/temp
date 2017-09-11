@@ -5,7 +5,7 @@ $(document).ready(function() {
     $("#addFacultyBtn").click(function(){
         var faculty_id = $('#facultySelectioID :selected').val();
         var faculty_data = $('#facultySelectioID :selected').text();
-        var password = $("#").val();
+        var password = $("#passwordInput").val();
         if(!faculty_id) {
             window.alert("Select A Faculy!!");
             return;
