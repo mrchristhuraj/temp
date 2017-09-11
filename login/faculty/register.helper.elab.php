@@ -80,7 +80,6 @@
     $unique_id = md5(bin2hex(openssl_random_pseudo_bytes(4)));
 
 
-    $password = md5($password);
     
     $sql = "CREATE TABLE IF NOT EXISTS `std_db_$username` (
   `STAFF_ID` varchar(15) DEFAULT NULL,
